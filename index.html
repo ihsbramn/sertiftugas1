@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Profile</title>
+</head>
+
+<body>
+    <br>
+    <h1 class="text-center">Tugas 1 form profile</h1>
+
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <label class="form-label" for="foto">Foto</label>
+                <input class="form-control" type="file" id="foto" required>
+            </div>
+            <div class="row">
+                <label class="form-label" for="nama">Nama Lengkap</label>
+                <input class="form-control" type="text" id="nama" minlength="3" required>
+            </div>
+            <div class="row">
+                <label class="form-label" for="panggilan">Nama Panggilan</label>
+                <input class="form-control" type="text" id="panggilan" minlength="3" required>
+            </div>
+            <div class="row">
+                <label class="form-label" for="Tempat Lahir">Tempat Lahir</label>
+                <input class="form-control" type="text" id="Tempat Lahir" required>
+            </div>
+            <div class="row">
+                <label class="form-label" for="tanggallahir">Tanggal Lahir</label>
+                <input class="form-control" type="date" id="tanggallahir" onchange="usia()" required>
+            </div>
+            <div class="row">
+                <label class="form-label" for="umur">Usia</label>
+                <input class="form-control" type="number" id="umur" min="18" max="30">
+            </div>
+            <div class="row">
+                <label class="form-label" for="kelamin">Jenis Kelamin</label>
+                <input class="form-control" type="text" id="kelamin" required>
+            </div>
+            <div class="row">
+                <label class="form-label" for="Kota">Kota tinggal</label>
+                <select class="form-select" id="kota" aria-label="Default select example">
+                    <option selected>Pilih Kota</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Medan">Medan</option>
+                    <option value="Surabaya">Bogor</option>
+                    <option value="Bali">Bogor</option>
+                    <option value="Sukabumi">Bogor</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="email" id="email" required>
+            </div>
+            <div class="row">
+                <label class="form-label" for="nohp">No Hp.</label>
+                <input class="form-control" type="text" id="nohp" minlength="4" required>
+            </div>
+            <div class="row">
+                <label class="form-label" for="socmed">Media Social</label>
+                <select class="form-control selectpicker" id="socmed" multiple data-live-search="true">
+                    <option>Facebook</option>
+                    <option>Instagram</option>
+                    <option>Twitter</option>
+                    <option>Tiktok</option>
+                </select>
+            </div>
+            <br>
+            <div class="row">
+                <br>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/css/bootstrap-select.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/js/bootstrap-select.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
