@@ -34,9 +34,17 @@
                 <input class="form-control" type="text" id="Tempat Lahir" required>
             </div>
             <div class="row">
-                <label class="form-label" for="tanggallahir">Tanggal Lahir</label>
-                <input class="form-control" type="date" id="tanggallahir" onchange="usia()" required>
+                <label class="form-label" for="bday">Tanggal Lahir</label>
+                <input class="form-control" type="date" id="bday" onchange="kalkulasi()" required>
             </div>
+            <script>
+                function kalkulasi() {
+                    var Bdate = document.getElementById('bday').value;
+                    var Bday = +new Date(Bdate);
+                    hasil = ((Date.now() - Bday) / (31557600000));
+                    document.getElementById('umur').value = hasil;
+                }
+            </script>
             <div class="row">
                 <label class="form-label" for="umur">Usia</label>
                 <input class="form-control" type="number" id="umur" min="18" max="30">
