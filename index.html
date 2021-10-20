@@ -42,12 +42,13 @@
                     var Bdate = document.getElementById('bday').value;
                     var Bday = +new Date(Bdate);
                     hasil = ((Date.now() - Bday) / (31557600000));
-                    document.getElementById('umur').value = hasil;
+                    pembulatan = Math.trunc(hasil);
+                    document.getElementById('umur').value = pembulatan;
                 }
             </script>
             <div class="row">
                 <label class="form-label" for="umur">Usia</label>
-                <input class="form-control" type="number" id="umur" min="18" max="30">
+                <input class="form-control" type="number" id="umur" min="18" max="30" readonly>
             </div>
             <div class="row">
                 <label class="form-label" for="kelamin">Jenis Kelamin</label>
